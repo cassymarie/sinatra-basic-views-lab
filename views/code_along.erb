@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Next Lesson - Code Along</title>
+    </head>
+    <body>
+        <h1>Next Lesson - Code Along</h1>
+
+        <h2>Substitution Tags</h2>
+               <p>sting concatenation: <%= "I love " + "Ruby!!" %></p>
+               <p>evalutions: (1 + 1) : <%= 1 + 1 %> </p>
+
+          <h2>Scripting Tags</h2>
+               <p>They evaluate –– but do not actually display –– Ruby code</p>
+               <% if 1 == 2 %>
+                    <p>1 equals 2.</p>
+               <% else %>
+                    <p>1 does not equal 2.</p>
+               <% end %> 
+          <h2>Iteration</h2>
+          <p>Can use iteration to manage lists of items. For instance, given an array squares = [1,4,9,16]</p>
+               <ul>
+                    <% squares = [1, 4, 9, 16] %>
+                    <% squares.each do |square| %>
+                    <li><%= square %></li>
+                    <% end %>
+               </ul>
+
+               <p>Another Example given an array:  wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"]</p>
+               <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+               <ul>
+                    <% wall_posts.each do |post| %>
+                         <li><%= post %></li>
+                    <% end %>
+               </ul>
+
+    </body>
+</html> 
